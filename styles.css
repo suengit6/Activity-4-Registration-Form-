@@ -1,0 +1,50 @@
+body{
+    background-image: linear-gradient(to right, rgb(255, 145, 217) , rgb(138, 210, 255));
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 100%;
+}
+
+form{
+    height: auto;
+    width: 40%;
+    background-image: url(bg.png);
+    background-size: cover;
+    border-radius: 20px;
+    border: 3px solid white;
+    padding: 20px;
+    margin: 5% 0;
+}
+.sect1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.full-width{
+    padding-bottom: 25px;
+}
+.buttonCont{
+    display: grid;
+    justify-content: center;
+    margin-top: 25px;
+}
+.mb-2 {
+    display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 768px) {
+    form{
+        width: 90%;
+        height: max-content;
+        position: absolute;
+        top: 10%;
+    }
+    .container{
+        margin-bottom: 100px;
+    }
+}
